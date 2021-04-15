@@ -1,1 +1,3 @@
-# Telegram-Bot
+# Telegram Bot Use Python
+* ملف تشغيل بوت تلجرام باستخدام لغة بايثون
+* يتم تشغيل البوت بدون استخدام مكتبة telebot
