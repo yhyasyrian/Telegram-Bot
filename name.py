@@ -22,11 +22,11 @@ def run(update):
 🤗┇ ارسل اسمك وانتظر ثانية 😎💞
 ''')
  else:
- 	get = requests.get('https://dev-yhya.tk/api/name/index.php?Name='+text).json()
-	 if get['ok'] == False:
+ 	get = requests.get('https://dev-yhya.tk/api/name/index.php?Name='+text)
+	 if get.json()['ok'] == False:
 		sendmessage(chat_id,'عذرا عزيزي الاسم الذي أدخلته خاطئ')
 	else:
-		sendmessage(chat_id,get['meaning'])
+		sendmessage(chat_id,get.json()['meaning'])
 update_id = 0
 while True:
   try:
