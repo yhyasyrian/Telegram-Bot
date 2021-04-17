@@ -25,10 +25,11 @@ while True:
 ''')
    else:
     api = requests.get("https://dev-yhya.tk/api/name/index.php?Name="+text).json()
-    if api['ok'] == False:
+    meaning = api['meaning']
+    if meaning == None:
      sendmessage(chat_id,'عذرا  عزيزي  الاسم  الذي  أدخلته  خاطئ')
     else:
-      sendmessage(chat_id,api['meaning'])
+      sendmessage(chat_id,meaning)
    update_id = int(update['update_id'])
  except:
   continue
