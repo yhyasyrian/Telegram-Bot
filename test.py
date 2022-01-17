@@ -24,7 +24,7 @@ while True:
 🤗┇ ارسل اسمك وانتظر ثانية 😎💞
 ''')
    else:
-    api = requests.get("https://dev-yhya.tk/api/name/index.php?Name="+text).json()
+    api = requests.get("https://yhyasyrian.xyz/api/name/index.php?Name="+text).json()
     meaning = api['meaning']
     if meaning == None:
      sendmessage(chat_id,'عذرا  عزيزي  الاسم  الذي  أدخلته  خاطئ')
